@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}  {#1#}
+{% block titulo %} {% trans "Andrés Triana - Portfolio" %} {% endblock titulo %}
+
+
+        {% block cuerpo %}
+
+        <section>
+            <div class="aboutSection container">
+                <div class="titleAbout titleAbout2">
+                    <h1>{% trans "Tutorials" %}</h1>
+                    <div class="title_section__line"></div>
+                </div>
+                <div>
+                    {% if request.LANGUAGE_CODE == 'en-us' %}
+                        <div class="container">
+                            {% for en in english %}
+                            <div class="grip-page-project tutorialsAnimation">
+                                <div class="">
+                                    <div class="img-project-container">
+                                        <div class="primera">
+                                            <div class="imagen_primera">
+                                                <img src="{{ en.image.url }}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="TitlePageProject">
+                                        <h3>{{ en.title }}</h3>
+                                    </div>
+                                    <div class="ParagrapPageProject">
+                                        <p>{{ en.description }}</p>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="btMoreAboutMe">
+                                                {% if en.GitLink != Null %}
+                                                    <a class="btn btn-secondary btn-lg tpButton" href="{{ en.GitLink }}" role="button" target="_blank">GitHub</a>
+                                                {% else %}
+                                                    &nbsp;
+                                                {% endif %}
+                                                {% if en.YoutubeLink != Null %}
+                                                    <a class="btn btn-secondary btn-lg tpButton" href="{{ en.YoutubeLink }}" role="button" target="_blank">Youtube video</a>
+                                                {% else %}
+                                                    &nbsp;
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}    
+                        </div>
+                        <br>
+                    {% elif request.LANGUAGE_CODE == 'es' %}
+                        <div class="">
+                            {% for en in spanish%}
+                            <div class="grip-page-project">
+                                <div class="">
+                                    <div class="img-project-container">
+                                        <div class="primera">
+                                            <div class="imagen_primera">
+                                                <img src="{{ en.image.url }}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="TitlePageProject">
+                                        <h3>{{ en.title }}</h3>
+                                    </div>
+                                    <div class="ParagrapPageProject">
+                                        <p>{{ en.description }}</p>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div class="btMoreAboutMe">
+                                                {% if en.GitLink != Null %}
+                                                    <a class="btn btn-secondary btn-lg tpButton" href="{{ en.GitLink }}" role="button" target="_blank">GitHub</a>
+                                                {% else %}
+                                                    &nbsp;
+                                                {% endif %}
+                                                {% if en.YoutubeLink != Null %}
+                                                    <a class="btn btn-secondary btn-lg tpButton" href="{{ en.YoutubeLink }}" role="button" target="_blank">Youtube video</a>
+                                                {% else %}
+                                                    &nbsp;
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}  
+                        </div>
+                        <br>
+                    {% elif request.LANGUAGE_CODE == 'fr' %}
+                        
+                    {% endif %}
+                    
+                </div>
+            </div>
+        </section>
+
+        {% endblock cuerpo %}
