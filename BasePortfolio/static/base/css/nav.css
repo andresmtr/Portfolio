@@ -17,7 +17,7 @@
 }
 .navbar{
     background-color:#33c073;
-    color: #043175;;
+    color: #0f4061;;
 
 }
 .page-footer,.top-nav-collapse{
@@ -33,7 +33,7 @@ button {
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .gridBanner{
     display: grid;
@@ -43,7 +43,7 @@ button {
 .iam{
     position: relative;
     left: 80px;
-    color: color: #043175;
+    color: #0f4061;
 }
 
 

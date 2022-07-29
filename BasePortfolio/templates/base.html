@@ -127,7 +127,7 @@
                                 <span
                                     class="txt-rotate"
                                     data-period="2000"
-                                    data-rotate='[ "Data analytics and visualizations.", "Data Science.", "Systems Enginner.", "Monitoring and evaluation."]'>
+                                    data-rotate='[ "Data analytics and visualizations.", "Data Science.", "Systems Engineer.", "Monitoring and evaluation."]'>
                                 </span>
                             {% elif request.LANGUAGE_CODE == 'es' %}
                                 <span class="typedEs"></span>  
@@ -167,17 +167,17 @@
                 <div class="col-12 col-sm-6 col-md-4">
                     <p class=""><img src="{% static "base/img/data.png" %}" width="50" height="50"></p>
                     <h2 class="subtitleAbout">{% trans "Love data" %}</h2>
-                    <p class="ParaAbout">{% trans "With the data can identify differents problems, analysts and transform. For this reason, I love the data and solve problems." %}</p>
+                    <p class="ParaAbout">{% trans "With data, I can identify different problems, analyze and transform. For this reason, I love data and solving problems." %}</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
                     <p class=""><img src="{% static "base/img/develop.png" %}" width="50" height="50"></p>
                     <h2 class="subtitleAbout">{% trans "Enjoy programming" %}</h2>
-                    <p class="ParaAbout">{% trans "Programming isn't a skill that everyone has and enjoy. For love coding, need creativity, knowledge and practice." %}</p>
+                    <p class="ParaAbout">{% trans "Programming isn't a skill that everyone has and enjoys. To love coding, you need creativity, knowledge and practice." %}</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
                      <p class=""><img src="{% static "base/img/learning.png" %}" width="50" height="50"></p>
-                    <h2 class="subtitleAbout">{% trans "Learning all time" %}</h2>
-                    <p class="ParaAbout">{% trans "The knowledge is the best tool to transform any life and create the better path. Learning changes everything." %}</p>                        
+                    <h2 class="subtitleAbout">{% trans "Learning all the time" %}</h2>
+                    <p class="ParaAbout">{% trans "Knowledge is the best tool to transform any life and create a better path. Learning changes everything." %}</p>                        
                 </div>
             </div>
             <div class="historyAbout">
@@ -185,7 +185,7 @@
                     <div class="col-12 col-sm-12 col-md-12">
                         <h2 class="subtitleAbout">{% trans "My profile" %}</h2>
                         {% if request.LANGUAGE_CODE == 'en-us' %}
-                        <p class="ParaAbout">{% trans "Systems engineer with extensive experience in positions such as manage database, evaluation and monitoring, construction of management reports and progress indicators, using Python and Excel for extraction, debugg, analysis, visualization of data and information. Strengths to interpret, analyze and diagnose process advances, well to design and implement operational plans oriented timely decision making." %}</p>    
+                        <p class="ParaAbout">{% trans "Systems engineer with extensive experience in positions such as database management, evaluation and monitoring, construction of management reports and progress indicators, using Python and Excel for extraction, debugging, analysis, visualization of data and information. Strengths in interpreting, analyzing and diagnosing process advances, good at designing and implementing operational plans oriented to timely decision-making." %}</p>    
                         {% elif request.LANGUAGE_CODE == 'es' %}
                         <p class="ParaAbout">{% trans "Ingeniero de sistemas con amplia experiencia en cargos como evaluación y monitoreo, manejo de bases de datos, construcción de reportes gerenciales e indicadores de avance, usando Python y Excel para la extracción, depuración, análisis, visualización de datos e información. Fortalezas para interpretar, analizar y diagnosticar avances de procesos, así como para diseñar e implementar planes operativos orientados para la toma de decisiones oportunas." %}</p>    
                         {% elif request.LANGUAGE_CODE == 'fr' %}
@@ -346,7 +346,7 @@
     <div>
         <div class="container">
             <div class="btMoreAboutMe">
-                <a class="btn btn-secondary btn-lg cvButton" href="{% url 'BasePortfolio:about' %}" role="button">{% trans "More about me" %}</a>
+                <a class="button button1" href="{% url 'BasePortfolio:about' %}" role="button">{% trans "More about me" %}</a>
             </div>
         </div>
     </div>
@@ -369,7 +369,7 @@
                             <div>
                                 <div class="container">
                                     <div class="btMoreAboutMe">
-                                        <a class="btn btn-secondary btn-lg cvButton" href="{{ en.namePdf.url }}" download="Andres_Triana_cv.pdf" role="button">{% trans "Download CV" %}</a>
+                                        <a class="button button1" href="{{ en.namePdf.url }}" download="Andres_Triana_cv.pdf" role="button">{% trans "Download CV" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +379,7 @@
                             <div>
                                 <div class="container">
                                     <div class="btMoreAboutMe">
-                                        <a class="btn btn-secondary btn-lg cvButton" href="{{ en.namePdf.url }}" download="Andres_Triana_HV.pdf" role="button">{% trans "Download CV" %}</a>
+                                        <a class="button button1" href="{{ en.namePdf.url }}" download="Andres_Triana_HV.pdf" role="button">{% trans "Download CV" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -424,7 +424,7 @@
                     <div>
                         <div class="container">
                             <div class="btMoreAboutMe">
-                                <a class="btn btn-secondary btn-lg cvButton" href="{% url 'BasePortfolio:project' %}" role="button">More projects</a>
+                                <a class="button button1" href="{% url 'BasePortfolio:project' %}" role="button">More projects</a>
                             </div>
                         </div>
                     </div>
@@ -451,7 +451,7 @@
                     <div>
                         <div class="container">
                             <div class="btMoreAboutMe">
-                                <a class="btn btn-secondary btn-lg cvButton" href="{% url 'BasePortfolio:project' %}" role="button">Más proyectos</a>
+                                <a class="button button1" href="{% url 'BasePortfolio:project' %}" role="button">Más proyectos</a>
                             </div>
                         </div>
                     </div>
@@ -501,7 +501,7 @@
                     <div>
                         <div class="container">
                             <div class="btMoreAboutMe">
-                                <a class="btn btn-secondary btn-lg cvButton" href="{% url 'BasePortfolio:tutorial' %}" role="button">More Tutorials</a>
+                                <a class="button button1" href="{% url 'BasePortfolio:tutorial' %}" role="button">More Tutorials</a>
                             </div>
                         </div>
                     </div>
@@ -527,7 +527,7 @@
                     <div>
                         <div class="container">
                             <div class="btMoreAboutMe">
-                                <a class="btn btn-secondary btn-lg cvButton" href="{% url 'BasePortfolio:tutorial' %}" role="button">Más Tutoriales</a>
+                                <a class="button button1" href="{% url 'BasePortfolio:tutorial' %}" role="button">Más Tutoriales</a>
                             </div>
                         </div>
                     </div>
