@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-09 19:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: BasePortfolio/templates/about.html:4 BasePortfolio/templates/base.html:38
+#: BasePortfolio/templates/project.html:4
+#: BasePortfolio/templates/tutorial.html:4
+msgid "Andrés Triana - Portfolio"
+msgstr ""
+
+#: BasePortfolio/templates/about.html:13
+msgid "Profile"
+msgstr ""
+
+#: BasePortfolio/templates/about.html:17 BasePortfolio/templates/base.html:190
+msgid ""
+"Systems engineer with extensive experience in positions such as manage "
+"database, evaluation and monitoring, construction of management reports and "
+"progress indicators, using Python and Excel for extraction, debugg, "
+"analysis, visualization of data and information. Strengths to interpret, "
+"analyze and diagnose process advances, well to design and implement "
+"operational plans oriented timely decision making."
+msgstr ""
+
+#: BasePortfolio/templates/about.html:29
+msgid "Experience"
+msgstr ""
+
+#: BasePortfolio/templates/about.html:93
+msgid "Education"
+msgstr ""
+
+#: BasePortfolio/templates/about.html:142
+msgid "Certifications"
+msgstr ""
+
+#: BasePortfolio/templates/about.html:168 BasePortfolio/templates/base.html:209
+msgid "Skills"
+msgstr ""
+
+#: BasePortfolio/templates/about.html:176 BasePortfolio/templates/base.html:217
+msgid "Data analytics and visualization"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:67
+msgid "Home"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:70 BasePortfolio/templates/base.html:162
+msgid "About Me"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:73 BasePortfolio/templates/base.html:399
+#: BasePortfolio/templates/project.html:12
+msgid "Projects"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:76 BasePortfolio/templates/base.html:475
+#: BasePortfolio/templates/tutorial.html:12
+msgid "Tutorials"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:79 BasePortfolio/templates/base.html:548
+msgid "Contact"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:114
+msgid "Hello, I'm "
+msgstr ""
+
+#: BasePortfolio/templates/base.html:169
+msgid "Love data"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:170
+msgid ""
+"With the data can identify differents problems, analysts and transform. For "
+"this reason, I love the data and solve problems."
+msgstr ""
+
+#: BasePortfolio/templates/base.html:174
+msgid "Enjoy programming"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:175
+msgid ""
+"Programming isn't a skill that everyone has and enjoy. For love coding, need "
+"creativity, knowledge and practice."
+msgstr ""
+
+#: BasePortfolio/templates/base.html:179
+msgid "Learning all time"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:180
+msgid ""
+"The knowledge is the best tool to transform any life and create the better "
+"path. Learning changes everything."
+msgstr ""
+
+#: BasePortfolio/templates/base.html:189
+msgid "My profile"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:191
+msgid "Passions"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:192
+msgid ""
+"Ingeniero de sistemas con amplia experiencia en cargos como evaluación y "
+"monitoreo, manejo de bases de datos para construcción de reportes "
+"gerenciales e indicadores de avance, usando Python y Excel para la "
+"extracción, depuración, análisis, visualización de datos e información. "
+"Fortalezas para interpretar, analizar y diagnosticar avances de procesos, "
+"así como para diseñar e implementar planes operativos orientados para la "
+"toma de decisiones oportunas."
+msgstr ""
+
+#: BasePortfolio/templates/base.html:347
+msgid "More about me"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:362
+msgid "Would you like to know more about my professional career?"
+msgstr ""
+
+#: BasePortfolio/templates/base.html:370 BasePortfolio/templates/base.html:380
+msgid "Download CV"
+msgstr ""
+
+#: portfolio/settings.py:133
+msgid "English"
+msgstr "Anglais"
+
+#: portfolio/settings.py:134
+msgid "Spanish"
+msgstr "Espagnol"
+
+#~ msgid "I'm Here, base.html"
+#~ msgstr "Je suis ici, base.html"
+
+#~ msgid "I'm here, in view"
+#~ msgstr "je suis là, en view"
+
+#~ msgid "French"
+#~ msgstr "Français"
