@@ -1,0 +1,236 @@
+.aboutSection{
+    text-align: center;
+}
+.titleAbout{
+    margin-top: 100px;
+    margin-left:80px;
+    margin-right: 80px;
+    margin-bottom:80px;
+}
+.titleAbout2{
+    margin-top: 200px;
+}
+.title_section__line {
+    width: 5rem;
+    border-bottom: 5px solid #33c073;
+    margin:0 auto
+}
+.section__line {
+    width: 75%;
+    border-bottom: 2px solid #33c073;
+    margin:0 auto
+}
+.GridAbout{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px .5em;
+    margin: 80px;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.subtitleAbout{
+    /* margin: 60px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ParaAbout{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.subtitlehistory{
+    margin-top: 10px;
+    margin-left:0;
+    margin-right: 60px;
+    margin-bottom:10px;
+}
+.historyAbout{
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:60px;
+    text-align: center;
+}
+.pictureHistory{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 310px;
+}
+.ima-profile{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.cv{
+    background-color:#33c073;
+    text-align: center;   
+}
+.icon-cv{
+    text-align: center;  
+    margin:60px 0px 20px 0px;
+}
+.wordsCv{
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:30px;
+}
+
+/* .btn{
+    background-color: #0f4061;
+} */
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button1{
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom:60px;
+    background-color: #0f4061;
+    color: white;
+    border: 2px solid #0f4061;
+}
+
+.button1:hover {
+    background-color: #2a495e;
+    color: white;
+  }
+
+
+.gridOfimatica{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.gridWeb{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.gridback{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.gridSQL{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.gridData1{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.gridData2{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+.gridData3{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+.gridDev{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px .5em;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+.btMoreAboutMe{
+    text-align: center;  
+    border-radius: 10px;
+}
+
+.jobs{
+    border: 2px solid;
+    border-color: bisque;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    /* background-color: #dfede5; */
+}
+.jobslist{
+    margin-top: 20px;
+    
+}
+.titleCompanyJob{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.descripbeJob{
+    vertical-align: middle;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+}
+
+
+  @media (max-width: 236px) {
+    .ima-profile{
+        text-align: center;
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    .button{
+        padding: 12px 24px;
+    }
+    .button1{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+

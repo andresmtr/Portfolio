@@ -1,0 +1,332 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}  {#1#}
+{% block titulo %} {% trans "Andrés Triana - Portfolio" %} {% endblock titulo %}
+
+
+        {% block cuerpo %}
+        <!-- Profile -->
+        <section>
+            <div class="aboutSection container">
+                <div>
+                    <div class="titleAbout titleAbout2">
+                        <h1>{% trans "Profile" %}</h1>
+                        <div class="title_section__line"></div>
+                    </div>
+                    <div>
+                        {% if request.LANGUAGE_CODE == 'en-us' %}
+                        <p class="ParaAbout">{% trans "Systems engineer with extensive experience in positions such as database management, evaluation and monitoring, construction of management reports and progress indicators, using Python and Excel for extraction, debugging, analysis, visualization of data and information. Strengths in interpreting, analyzing and diagnosing process advances, good at designing and implementing operational plans oriented to timely decision-making." %}</p>    
+                        {% elif request.LANGUAGE_CODE == 'es' %}
+                        <p class="ParaAbout">{% trans "Ingeniero de sistemas con amplia experiencia en cargos como evaluación y monitoreo, manejo de bases de datos, construcción de reportes gerenciales e indicadores de avance, usando Python y Excel para la extracción, depuración, análisis, visualización de datos e información. Fortalezas para interpretar, analizar y diagnosticar avances de procesos, así como para diseñar e implementar planes operativos orientados para la toma de decisiones oportunas." %}</p>    
+                        {% elif request.LANGUAGE_CODE == 'fr' %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="row">
+                <div>
+                    <div class="aboutSection container">
+                        <div>
+                            <div class="titleAbout">
+                                <h1>{% trans "Experience" %}</h1>
+                                <div class="title_section__line"></div>
+                            </div>
+                            {% if request.LANGUAGE_CODE == 'en-us' %}
+                            {% for en in english %}
+                            <div>
+                                <div class="jobs">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-4 jobslist">
+                                            <div>
+                                                <h4 class="titleCompanyJob">{{ en.titleCompany }}</h4>
+                                            </div>
+                                            <div>
+                                                <h6>{{ en.titleJob }}</h6>
+                                                <p>{{ en.beginJob }} - {{ en.endJob }}</p>
+                                            </div> 
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-8 jobslist ">
+                                            <div class="descripbeJob">
+                                                <p>{{ en.descriptionJob }}</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %} 
+                            {% elif request.LANGUAGE_CODE == 'es' %}
+                            {% for en in spanish %}
+                            <div>
+                                <div class="jobs">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-4 jobslist">
+                                            <div>
+                                                <h4 class="titleCompanyJob">{{ en.titleCompany }}</h4>
+                                            </div>
+                                            <div>
+                                                <h6>{{ en.titleJob }}</h6>
+                                                <p>{{ en.beginJob }} - {{ en.endJob }}</p>
+                                            </div> 
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-8 jobslist ">
+                                            <div class="descripbeJob">
+                                                <p>{{ en.descriptionJob }}</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %} 
+                            {% elif request.LANGUAGE_CODE == 'fr' %}
+                            
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- education -->
+        <section>
+            <div class="aboutSection container">
+                <div class="titleAbout">
+                    <h1>{% trans "Education" %}</h1>
+                    <div class="title_section__line"></div>
+                </div>
+                {% if request.LANGUAGE_CODE == 'en-us' %}
+                {% for en in EduEnglish %}
+                <div class="jobs">
+                    <div class="row">
+                        <div class="jobslist">
+                            <div>
+                                <h4 class="titleCompanyJob">{{ en.nameCollege }}</h4>
+                            </div>
+                            <div>
+                                <h6>{{ en.titleEducations }}</h6>
+                                <p>{{ en.beginEducation }} - {{ en.endEducation }}</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %} 
+                {% elif request.LANGUAGE_CODE == 'es' %}
+
+                {% for en in EduEpanish %}
+                <div class="jobs">
+                    <div class="row">
+                        <div class="jobslist">
+                            <div>
+                                <h4 class="titleCompanyJob">{{ en.nameCollege }}</h4>
+                            </div>
+                            <div>
+                                <h6>{{ en.titleEducations }}</h6>
+                                <p>{{ en.beginEducation }} - {{ en.endEducation }}</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                {% endfor %}
+
+                {% elif request.LANGUAGE_CODE == 'fr' %}
+                    
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+            <div class="aboutSection container">
+                <div class="titleAbout">
+                    <h1>{% trans "Certifications" %}</h1>
+                    <div class="title_section__line"></div>
+                </div>
+                {% for en in certificate %}
+                <div class="jobs">
+                    <div class="row">
+                        <div class="jobslist">
+                            <div>
+                                <h4 class="titleCompanyJob">{{ en.titleCertification }}</h4>
+                            </div>
+                            <div>
+                                <p><a href="{{ en.LinkCertification }}" target="_blank"><img src="{{ en.institute.imageInstitute.url }}" width="50" height="50"></a></p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                {% endfor %} 
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section>
+
+            <div class="aboutSection container">
+
+                <div class="titleAbout">
+                    <h1>{% trans "Skills" %}</h1>
+                    <div class="title_section__line"></div>
+                </div>
+
+                <div class="row">
+                    <!-- Data Science -->
+                    <div class="col-md-6 col-xs-6 DataScience">
+                        <div id="spin">
+                            <h3>{% trans "Data analytics and visualization" %}</h3>
+                        </div>
+                        <div>
+                            <div class="gridData1">
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/Python.svg" %}" width="50" height="50"></p>
+                                    <p>Python</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/Matplotlib.svg" %}" width="50" height="50"></p>
+                                    <p>Matplotlib</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/numpy.svg" %}" width="80" height="45"></p>
+                                    <p>Numpy</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/Seaborn.svg" %}" width="80" height="45"></p>
+                                    <p>Seaborn</p>
+                                </div>
+                            </div>
+                            <div class="gridData2">
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/Pandas.svg" %}" width="60" height="50"></p>
+                                    <p>Pandas</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/plotly.svg" %}" width="60" height="50"></p>
+                                    <p>Dash-Plotly</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/chartjs.svg" %}" width="60" height="50"></p>
+                                    <p>Chart.js</p>
+                                </div>
+                            </div>
+                            <div class="gridData3">
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/google-data-studio.svg" %}" width="60" height="50"></p>
+                                    <p>Google Data Studio</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/PowerBi.svg" %}" width="60" height="50"></p>
+                                    <p>Power Bi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Desarrollo Web -->
+                    <div class="col-md-6 col-xs-6 fullStackDevelop">
+                        <div id="spin">
+                            <h3>Full stack developer</h3>
+                        </div>
+                        <div>
+                            <div class="gridWeb">
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/html-5.svg" %}" width="50" height="50"></p>
+                                    <p>HTML</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/css-3.svg" %}" width="50" height="50"></p>
+                                    <p>CSS</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/Bootstrap_logo.svg" %}" width="50" height="50"></p>
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/javascript.svg" %}" width="50" height="50"></p>
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="gridback">
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/Python.svg" %}" width="50" height="50"></p>
+                                    <p>Python</p>
+                                </div>
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/django.svg" %}" width="50" height="50"></p>
+                                    <p>Django</p>
+                                </div>
+                            </div>
+                            <div class="gridSQL">
+                                <div id="spin">
+                                    <p class=""><img src="{% static "base/icon/database.svg" %}" width="70" height="45"></p>
+                                    <p>SQL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Ofimatica and project managae-->
+                    <div class="col-md-6 col-xs-6  Office">
+                        <div id="spin">
+                            <h3>Office and Project Management</h3>
+                        </div>
+                        <div class="gridOfimatica">
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/excel.svg" %}" width="50" height="50"></p>
+                                <p>Excel</p>
+                            </div>
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/word.svg" %}" width="50" height="50"></p>
+                                <p>Word</p>
+                            </div>
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/powerpoint.svg" %}" width="50" height="50"></p>
+                                <p>Power Point</p>
+                            </div>
+                        </div>
+                        <div class="gridOfimatica">
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/Slack.svg" %}" width="50" height="50"></p>
+                                <p>Slack</p>
+                            </div>
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/Trello.svg" %}" width="50" height="50"></p>
+                                <p>Trello</p>
+                            </div>
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/Teams.svg" %}" width="50" height="50"></p>
+                                <p>Microsoft Teams</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Coding -->
+                    <div class="col-md-6 col-xs-6 Coding">
+                        <div id="spin">
+                            <h3>Coding</h3>
+                        </div>
+                        <div class="gridOfimatica">
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/visual-studio-code.svg" %}" width="50" height="50"></p>
+                                <p>Visual studio Code</p>
+                            </div>
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/jupyter.svg" %}" width="50" height="50"></p>
+                                <p>Jupyter Notebook</p>
+                            </div>
+                            <div id="spin">
+                                <p class=""><img src="{% static "base/icon/Google_Colaboratory.png" %}" width="70" height="50"></p>
+                                <p>Google Colaboratory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        {% endblock cuerpo %}

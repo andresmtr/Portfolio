@@ -167,30 +167,17 @@
                 <div class="col-12 col-sm-6 col-md-4">
                     <p class=""><img src="{% static "base/img/data.png" %}" width="50" height="50"></p>
                     <h2 class="subtitleAbout">{% trans "Love data" %}</h2>
-                    {% if request.LANGUAGE_CODE == 'en-us' %}
                     <p class="ParaAbout">{% trans "With data, I can identify different problems, analyze and transform. For this reason, I love data and solving problems." %}</p>
-                    {% elif request.LANGUAGE_CODE == 'es' %}
-                    <p class="ParaAbout">{% trans "Con los datos puedo identificar diferentes problemas, analizarlos y transformarlos. Por esta razón, me encantan los datos y resolver problemas." %}</p>
-                    {% endif %} 
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
                     <p class=""><img src="{% static "base/img/develop.png" %}" width="50" height="50"></p>
                     <h2 class="subtitleAbout">{% trans "Enjoy programming" %}</h2>
-                    {% if request.LANGUAGE_CODE == 'en-us' %}
                     <p class="ParaAbout">{% trans "Programming isn't a skill that everyone has and enjoys. To love coding, you need creativity, knowledge and practice." %}</p>
-                    {% elif request.LANGUAGE_CODE == 'es' %}
-                    <p class="ParaAbout">{% trans "Programar no es una habilidad que todo mundo tenga, y disfrute. Para amar la codificación, necesitas creatividad, conocimiento y practica." %}</p>
-                    {% endif %} 
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
                      <p class=""><img src="{% static "base/img/learning.png" %}" width="50" height="50"></p>
                     <h2 class="subtitleAbout">{% trans "Learning all the time" %}</h2>
-                    {% if request.LANGUAGE_CODE == 'en-us' %}
-                    <p class="ParaAbout">{% trans "Knowledge is the best tool to transform any life and create a better path. Learning changes everything." %}</p>
-                    {% elif request.LANGUAGE_CODE == 'es' %}
-                    <p class="ParaAbout">{% trans "El conocimiento es la mejor herramienta para transformar cualquier vida y crear un mejor camino. Aprender lo cambia todo." %}</p>
-                    {% elif request.LANGUAGE_CODE == 'fr' %}
-                    {% endif %}             
+                    <p class="ParaAbout">{% trans "Knowledge is the best tool to transform any life and create a better path. Learning changes everything." %}</p>                        
                 </div>
             </div>
             <div class="historyAbout">

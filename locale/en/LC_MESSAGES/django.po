@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-09 19:29+0000\n"
+"POT-Creation-Date: 2022-09-05 23:14-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,33 +28,44 @@ msgstr ""
 msgid "Profile"
 msgstr ""
 
-#: BasePortfolio/templates/about.html:17 BasePortfolio/templates/base.html:190
+#: BasePortfolio/templates/about.html:18 BasePortfolio/templates/base.html:188
 msgid ""
-"Systems engineer with extensive experience in positions such as manage "
-"database, evaluation and monitoring, construction of management reports and "
-"progress indicators, using Python and Excel for extraction, debugg, "
-"analysis, visualization of data and information. Strengths to interpret, "
-"analyze and diagnose process advances, well to design and implement "
-"operational plans oriented timely decision making."
+"Systems engineer with extensive experience in positions such as database "
+"management, evaluation and monitoring, construction of management reports "
+"and progress indicators, using Python and Excel for extraction, debugging, "
+"analysis, visualization of data and information. Strengths in interpreting, "
+"analyzing and diagnosing process advances, good at designing and "
+"implementing operational plans oriented to timely decision-making."
 msgstr ""
 
-#: BasePortfolio/templates/about.html:29
+#: BasePortfolio/templates/about.html:20 BasePortfolio/templates/base.html:190
+msgid ""
+"Ingeniero de sistemas con amplia experiencia en cargos como evaluación y "
+"monitoreo, manejo de bases de datos, construcción de reportes gerenciales e "
+"indicadores de avance, usando Python y Excel para la extracción, depuración, "
+"análisis, visualización de datos e información. Fortalezas para interpretar, "
+"analizar y diagnosticar avances de procesos, así como para diseñar e "
+"implementar planes operativos orientados para la toma de decisiones "
+"oportunas."
+msgstr ""
+
+#: BasePortfolio/templates/about.html:34
 msgid "Experience"
 msgstr ""
 
-#: BasePortfolio/templates/about.html:93
+#: BasePortfolio/templates/about.html:98
 msgid "Education"
 msgstr ""
 
-#: BasePortfolio/templates/about.html:142
+#: BasePortfolio/templates/about.html:147
 msgid "Certifications"
 msgstr ""
 
-#: BasePortfolio/templates/about.html:168 BasePortfolio/templates/base.html:209
+#: BasePortfolio/templates/about.html:173 BasePortfolio/templates/base.html:209
 msgid "Skills"
 msgstr ""
 
-#: BasePortfolio/templates/about.html:176 BasePortfolio/templates/base.html:217
+#: BasePortfolio/templates/about.html:181 BasePortfolio/templates/base.html:217
 msgid "Data analytics and visualization"
 msgstr ""
 
@@ -66,17 +77,17 @@ msgstr ""
 msgid "About Me"
 msgstr ""
 
-#: BasePortfolio/templates/base.html:73 BasePortfolio/templates/base.html:399
+#: BasePortfolio/templates/base.html:73 BasePortfolio/templates/base.html:423
 #: BasePortfolio/templates/project.html:12
 msgid "Projects"
 msgstr ""
 
-#: BasePortfolio/templates/base.html:76 BasePortfolio/templates/base.html:475
+#: BasePortfolio/templates/base.html:76 BasePortfolio/templates/base.html:497
 #: BasePortfolio/templates/tutorial.html:12
 msgid "Tutorials"
 msgstr ""
 
-#: BasePortfolio/templates/base.html:79 BasePortfolio/templates/base.html:548
+#: BasePortfolio/templates/base.html:79 BasePortfolio/templates/base.html:570
 msgid "Contact"
 msgstr ""
 
@@ -90,8 +101,8 @@ msgstr ""
 
 #: BasePortfolio/templates/base.html:170
 msgid ""
-"With the data can identify differents problems, analysts and transform. For "
-"this reason, I love the data and solve problems."
+"With data, I can identify different problems, analyze and transform. For "
+"this reason, I love data and solving problems."
 msgstr ""
 
 #: BasePortfolio/templates/base.html:174
@@ -100,48 +111,33 @@ msgstr ""
 
 #: BasePortfolio/templates/base.html:175
 msgid ""
-"Programming isn't a skill that everyone has and enjoy. For love coding, need "
-"creativity, knowledge and practice."
+"Programming isn't a skill that everyone has and enjoys. To love coding, you "
+"need creativity, knowledge and practice."
 msgstr ""
 
 #: BasePortfolio/templates/base.html:179
-msgid "Learning all time"
+msgid "Learning all the time"
 msgstr ""
 
 #: BasePortfolio/templates/base.html:180
 msgid ""
-"The knowledge is the best tool to transform any life and create the better "
-"path. Learning changes everything."
+"Knowledge is the best tool to transform any life and create a better path. "
+"Learning changes everything."
 msgstr ""
 
-#: BasePortfolio/templates/base.html:189
+#: BasePortfolio/templates/base.html:186
 msgid "My profile"
 msgstr ""
 
-#: BasePortfolio/templates/base.html:191
-msgid "Passions"
-msgstr ""
-
-#: BasePortfolio/templates/base.html:192
-msgid ""
-"Ingeniero de sistemas con amplia experiencia en cargos como evaluación y "
-"monitoreo, manejo de bases de datos para construcción de reportes "
-"gerenciales e indicadores de avance, usando Python y Excel para la "
-"extracción, depuración, análisis, visualización de datos e información. "
-"Fortalezas para interpretar, analizar y diagnosticar avances de procesos, "
-"así como para diseñar e implementar planes operativos orientados para la "
-"toma de decisiones oportunas."
-msgstr ""
-
-#: BasePortfolio/templates/base.html:347
+#: BasePortfolio/templates/base.html:371
 msgid "More about me"
 msgstr ""
 
-#: BasePortfolio/templates/base.html:362
+#: BasePortfolio/templates/base.html:386
 msgid "Would you like to know more about my professional career?"
 msgstr ""
 
-#: BasePortfolio/templates/base.html:370 BasePortfolio/templates/base.html:380
+#: BasePortfolio/templates/base.html:394 BasePortfolio/templates/base.html:404
 msgid "Download CV"
 msgstr ""
 
