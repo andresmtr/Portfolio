@@ -146,3 +146,22 @@ class certification(ModeloBase):
     class  Meta:
         verbose_name = 'certification'
         verbose_name_plural = 'certifications'
+
+
+class skillSection(ModeloBase):
+
+    nameSkillSection = models.CharField('Name Skill Section', max_length=150, unique=True)
+
+    class  Meta:
+        verbose_name = 'skillSection'
+        verbose_name_plural = 'skillSections'
+
+class skillName(ModeloBase):
+
+    nameSkillSection = models.ForeignKey(skillSection, on_delete=models.CASCADE)
+    nameSkill = models.CharField('Name Skill', max_length=150)
+    numberSkill = models.IntegerField('Number skill')
+
+    class  Meta:
+        verbose_name = 'SkillName'
+        verbose_name_plural = 'SkillNames'

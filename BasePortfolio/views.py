@@ -7,7 +7,7 @@ from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse, HttpResponseNotFound
 from django.template.loader import get_template
 from django.utils.translation import gettext as _
-from .models import Author,language,Project,Tutorial, pdf, jobs, educations, institutionsCertifications, certification
+from .models import Author,language,Project,Tutorial, pdf, jobs, educations, institutionsCertifications, certification, skillName
 from django.views.generic import ListView, View, DetailView
 
 # Create your views here.
@@ -37,24 +37,72 @@ class Beginning():
         TuSpanish = Tutorial.objects.filter(language_id = 2).order_by('-date_creaction_tutorial')
         TuFrench = Tutorial.objects.filter(language_id = 3).order_by('-date_creaction_tutorial')
 
+        ######## Skills
+
+        ## Data
+
+        dataAnalytics = skillName.objects.filter(nameSkillSection = 1).order_by('-numberSkill')
+        DataDict = ''
+
+        for data in dataAnalytics:
+            DataDict = DataDict+'{word: ' + '"'+data.nameSkill +'"'+ ', size: '+ '"'+str(data.numberSkill)+'"'+'},'
+
+        ## Full stack
+
+        FullStack = skillName.objects.filter(nameSkillSection = 2).order_by('-numberSkill')
+        FullDict = ''
+
+        for full in FullStack:
+            FullDict = FullDict+'{word: ' + '"'+full.nameSkill +'"'+ ', size: '+ '"'+str(full.numberSkill)+'"'+'},'
+
+        ## Office
+
+        Ofiice = skillName.objects.filter(nameSkillSection = 3).order_by('-numberSkill')
+        OfficeDict = ''
+
+        for Off in Ofiice:
+            OfficeDict = OfficeDict+'{word: ' + '"'+Off.nameSkill +'"'+ ', size: '+ '"'+str(Off.numberSkill)+'"'+'},'
+
+        ## Coding
+        Coding = skillName.objects.filter(nameSkillSection = 4).order_by('-numberSkill')
+        CodDict = ''
+
+        for Cod in Coding:
+            CodDict = CodDict+'{word: ' + '"'+Cod.nameSkill +'"'+ ', size: '+ '"'+str(Cod.numberSkill)+'"'+'},'
+
         context = { 
-            # Projects            
+            ### Projects            
             'english':english,
             'spanish': spanish,
             'french':french,
 
-            #Author
+            ### Author
             'author':author,
 
-            #pdf
+            ### pdf
             'english_pdf':english_pdf,
             'spanish_pdf':spanish_pdf,
             'french_pdf':french_pdf,
 
-            # Tutorials
+            ### Tutorials
             'TuEnglish':TuEnglish,
             'TuSpanish':TuSpanish,
             'TuFrench':TuFrench,
+
+            ### Skills
+
+            # Data
+            'DataDict':DataDict,
+
+            # Full stack
+            'FullDict':FullDict,
+
+            # Office
+            'OfficeDict':OfficeDict,
+
+            # Coding
+            'CodDict':CodDict,
+
         }
 
         return render(request, 'base.html', context)  # 4
@@ -123,6 +171,39 @@ class AboutMe(DetailView):
         # Certifications
         certificate = certification.objects.all().order_by('-id')
 
+        ######## Skills
+
+        ## Data
+
+        dataAnalytics = skillName.objects.filter(nameSkillSection = 1).order_by('-numberSkill')
+        DataDict = ''
+
+        for data in dataAnalytics:
+            DataDict = DataDict+'{word: ' + '"'+data.nameSkill +'"'+ ', size: '+ '"'+str(data.numberSkill)+'"'+'},'
+
+        ## Full stack
+
+        FullStack = skillName.objects.filter(nameSkillSection = 2).order_by('-numberSkill')
+        FullDict = ''
+
+        for full in FullStack:
+            FullDict = FullDict+'{word: ' + '"'+full.nameSkill +'"'+ ', size: '+ '"'+str(full.numberSkill)+'"'+'},'
+
+        ## Office
+
+        Ofiice = skillName.objects.filter(nameSkillSection = 3).order_by('-numberSkill')
+        OfficeDict = ''
+
+        for Off in Ofiice:
+            OfficeDict = OfficeDict+'{word: ' + '"'+Off.nameSkill +'"'+ ', size: '+ '"'+str(Off.numberSkill)+'"'+'},'
+
+        ## Coding
+        Coding = skillName.objects.filter(nameSkillSection = 4).order_by('-numberSkill')
+        CodDict = ''
+
+        for Cod in Coding:
+            CodDict = CodDict+'{word: ' + '"'+Cod.nameSkill +'"'+ ', size: '+ '"'+str(Cod.numberSkill)+'"'+'},'
+
         context = {
             # jobs
             'english':english,
@@ -136,6 +217,20 @@ class AboutMe(DetailView):
 
             #certificate
             'certificate':certificate,
+
+            ### Skills
+
+            # Data
+            'DataDict':DataDict,
+
+            # Full stack
+            'FullDict':FullDict,
+
+            # Office
+            'OfficeDict':OfficeDict,
+
+            # Coding
+            'CodDict':CodDict,
 
 
 

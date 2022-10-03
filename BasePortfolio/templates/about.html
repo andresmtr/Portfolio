@@ -168,61 +168,25 @@
         <section>
 
             <div class="aboutSection container">
-
+    
                 <div class="titleAbout">
                     <h1>{% trans "Skills" %}</h1>
                     <div class="title_section__line"></div>
                 </div>
-
+    
                 <div class="row">
                     <!-- Data Science -->
                     <div class="col-md-6 col-xs-6 DataScience">
                         <div id="spin">
-                            <h3>{% trans "Data analytics and visualization" %}</h3>
+                            {% if request.LANGUAGE_CODE == 'en-us' %}
+                                <h3>{% trans "Data analytics and visualization" %}</h3>
+                            {% elif request.LANGUAGE_CODE == 'es' %}
+                                <h3>Análisis de datos y visualización</h3>
+                            {% endif %}
                         </div>
                         <div>
-                            <div class="gridData1">
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/Python.svg" %}" width="50" height="50"></p>
-                                    <p>Python</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/Matplotlib.svg" %}" width="50" height="50"></p>
-                                    <p>Matplotlib</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/numpy.svg" %}" width="80" height="45"></p>
-                                    <p>Numpy</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/Seaborn.svg" %}" width="80" height="45"></p>
-                                    <p>Seaborn</p>
-                                </div>
-                            </div>
-                            <div class="gridData2">
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/Pandas.svg" %}" width="60" height="50"></p>
-                                    <p>Pandas</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/plotly.svg" %}" width="60" height="50"></p>
-                                    <p>Dash-Plotly</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/chartjs.svg" %}" width="60" height="50"></p>
-                                    <p>Chart.js</p>
-                                </div>
-                            </div>
-                            <div class="gridData3">
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/google-data-studio.svg" %}" width="60" height="50"></p>
-                                    <p>Google Data Studio</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/PowerBi.svg" %}" width="60" height="50"></p>
-                                    <p>Power Bi</p>
-                                </div>
-                            </div>
+                            <div id="my_dataviz"></div>
+                            <!-- <p>{{DataDict}}</p> -->
                         </div>
                     </div>
                     <br>
@@ -231,76 +195,24 @@
                         <div id="spin">
                             <h3>Full stack developer</h3>
                         </div>
-                        <div>
-                            <div class="gridWeb">
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/html-5.svg" %}" width="50" height="50"></p>
-                                    <p>HTML</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/css-3.svg" %}" width="50" height="50"></p>
-                                    <p>CSS</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/Bootstrap_logo.svg" %}" width="50" height="50"></p>
-                                    <p>Bootstrap</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/javascript.svg" %}" width="50" height="50"></p>
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                            <div class="gridback">
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/Python.svg" %}" width="50" height="50"></p>
-                                    <p>Python</p>
-                                </div>
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/django.svg" %}" width="50" height="50"></p>
-                                    <p>Django</p>
-                                </div>
-                            </div>
-                            <div class="gridSQL">
-                                <div id="spin">
-                                    <p class=""><img src="{% static "base/icon/database.svg" %}" width="70" height="45"></p>
-                                    <p>SQL</p>
-                                </div>
-                            </div>
+                        <div class="cloudWords">
+                            <div id="my_dataviz2"></div>
+                            <!-- <p>{{DataDict}}</p> -->
                         </div>
                     </div>
                     <br>
                     <!-- Ofimatica and project managae-->
                     <div class="col-md-6 col-xs-6  Office">
                         <div id="spin">
+                        {% if request.LANGUAGE_CODE == 'en-us' %}
                             <h3>Office and Project Management</h3>
+                        {% elif request.LANGUAGE_CODE == 'es' %}
+                            <h3>Office y Project Managment</h3>
+                        {% endif %}
                         </div>
-                        <div class="gridOfimatica">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/excel.svg" %}" width="50" height="50"></p>
-                                <p>Excel</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/word.svg" %}" width="50" height="50"></p>
-                                <p>Word</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/powerpoint.svg" %}" width="50" height="50"></p>
-                                <p>Power Point</p>
-                            </div>
-                        </div>
-                        <div class="gridOfimatica">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Slack.svg" %}" width="50" height="50"></p>
-                                <p>Slack</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Trello.svg" %}" width="50" height="50"></p>
-                                <p>Trello</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Teams.svg" %}" width="50" height="50"></p>
-                                <p>Microsoft Teams</p>
-                            </div>
+                        <div class="cloudWords">
+                            <div id="my_dataviz3"></div>
+                            <!-- <p>{{DataDict}}</p> -->
                         </div>
                     </div>
                     <br>
@@ -309,24 +221,386 @@
                         <div id="spin">
                             <h3>Coding</h3>
                         </div>
-                        <div class="gridOfimatica">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/visual-studio-code.svg" %}" width="50" height="50"></p>
-                                <p>Visual studio Code</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/jupyter.svg" %}" width="50" height="50"></p>
-                                <p>Jupyter Notebook</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Google_Colaboratory.png" %}" width="70" height="50"></p>
-                                <p>Google Colaboratory</p>
-                            </div>
+                        <div class="cloudWords">
+                            <div id="my_dataviz4"></div>
+                            <!-- <p>{{DataDict}}</p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script>   
+            // List of words
+            // var myWords = [{word: "Running", size: "10"}, {word: "Surfing", size: "20"}, {word: "Climbing", size: "50"}, {word: "Kiting", size: "30"}, {word: "Sailing", size: "20"}, {word: "Snowboarding", size: "60"} ]
+            var myWords = [{{DataDict|safe}}]
+
+            // set the dimensions and margins of the graph
+            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+                // width = 450 - margin.left - margin.right,
+                // height = 450 - margin.top - margin.bottom;
+
+                screenWidth = 0;
+
+                if ($(window).width() < 320) {
+                    screenWidth = 260
+                }
+                else if ($(window).width() < 375) {
+                    screenWidth = 280
+                }
+                else if ($(window).width() < 414) {
+                    screenWidth = 310
+                }
+                else if ($(window).width() < 450) {
+                    screenWidth = 366
+                }
+                else {
+                    screenWidth = 450
+                }
+
+                // console.loq(screenWidth)
+
+                width = screenWidth - margin.left - margin.right,
+                height = screenWidth - margin.top - margin.bottom;
+
+            // append the svg object to the body of the page
+            var svg = d3.select("#my_dataviz").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+            // Wordcloud features that are different from one word to the other must be here
+
+
+            var multiSize = 0;
+
+            if ($(window).width() < 320) {
+                    multiSize = 0.3
+                }
+                else if ($(window).width() < 375) {
+                    multiSize = 0.4
+                }
+                else if ($(window).width() < 414) {
+                    multiSize = 0.5
+                }
+                else if ($(window).width() < 450) {
+                    multiSize = 0.6
+                }
+                else {
+                    multiSize = 1
+                }
+
+            var layout = d3.layout.cloud()
+            .size([width, height])
+            .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
+            .padding(1)        //space between words
+            .rotate(function() { return ~~(Math.random() * 2) * 90; })
+            .fontSize(function(d) { return d.size; })      // font size of words
+            .on("end", draw);
+            layout.start();
+
+            // This function takes the output of 'layout' above and draw the words
+            // Wordcloud features that are THE SAME from one word to the other can be here
+            function draw(words) {
+            svg
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                    .data(words)
+                .enter().append("text")
+                    .style("font-size", function(d) { return d.size; })
+                    .style("fill", "#69b3a2")
+                    .attr("text-anchor", "middle")
+                    .style("font-family", "Impact")
+                    .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .text(function(d) { return d.text; });
+            }    
+        </script>
+
+        <script>  
+            // List of words
+            // var myWords = [{word: "Running", size: "10"}, {word: "Surfing", size: "20"}, {word: "Climbing", size: "50"}, {word: "Kiting", size: "30"}, {word: "Sailing", size: "20"}, {word: "Snowboarding", size: "60"} ]
+            var myWords = [{{FullDict|safe}}]
+
+            // set the dimensions and margins of the graph
+            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+                // width = 450 - margin.left - margin.right,
+                // height = 450 - margin.top - margin.bottom;
+
+                screenWidth = 0;
+
+                if ($(window).width() < 320) {
+                    screenWidth = 260
+                }
+                else if ($(window).width() < 375) {
+                    screenWidth = 280
+                }
+                else if ($(window).width() < 414) {
+                    screenWidth = 310
+                }
+                else if ($(window).width() < 450) {
+                    screenWidth = 366
+                }
+                else {
+                    screenWidth = 450
+                }
+
+                // console.loq(screenWidth)
+
+                width = screenWidth - margin.left - margin.right,
+                height = screenWidth - margin.top - margin.bottom;
+
+            // append the svg object to the body of the page
+            var svg = d3.select("#my_dataviz2").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+            // Wordcloud features that are different from one word to the other must be here
+
+            var multiSize = 0;
+
+            if ($(window).width() < 320) {
+                    multiSize = 0.3
+                }
+                else if ($(window).width() < 375) {
+                    multiSize = 0.4
+                }
+                else if ($(window).width() < 414) {
+                    multiSize = 0.5
+                }
+                else if ($(window).width() < 450) {
+                    multiSize = 0.6
+                }
+                else {
+                    multiSize = 1
+                }
+
+            var layout = d3.layout.cloud()
+            .size([width, height])
+            .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
+            .padding(1)        //space between words
+            .rotate(function() { return ~~(Math.random() * 2) * 90; })
+            .fontSize(function(d) { return d.size; })      // font size of words
+            .on("end", draw);
+            layout.start();
+
+            // This function takes the output of 'layout' above and draw the words
+            // Wordcloud features that are THE SAME from one word to the other can be here
+            function draw(words) {
+            svg
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                    .data(words)
+                .enter().append("text")
+                    .style("font-size", function(d) { return d.size; })
+                    .style("fill", "#69b3a2")
+                    .attr("text-anchor", "middle")
+                    .style("font-family", "Impact")
+                    .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .text(function(d) { return d.text; });
+            }  
+
+        </script>
+
+        <script>  
+            // List of words
+            // var myWords = [{word: "Running", size: "10"}, {word: "Surfing", size: "20"}, {word: "Climbing", size: "50"}, {word: "Kiting", size: "30"}, {word: "Sailing", size: "20"}, {word: "Snowboarding", size: "60"} ]
+            var myWords = [{{OfficeDict|safe}}]
+
+            // set the dimensions and margins of the graph
+            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+                // width = 450 - margin.left - margin.right,
+                // height = 450 - margin.top - margin.bottom;
+
+                screenWidth = 0;
+
+                if ($(window).width() < 320) {
+                    screenWidth = 260
+                }
+                else if ($(window).width() < 375) {
+                    screenWidth = 280
+                }
+                else if ($(window).width() < 414) {
+                    screenWidth = 310
+                }
+                else if ($(window).width() < 450) {
+                    screenWidth = 366
+                }
+                else {
+                    screenWidth = 450
+                }
+
+                // console.loq(screenWidth)
+
+                width = screenWidth - margin.left - margin.right,
+                height = screenWidth - margin.top - margin.bottom;
+
+            // append the svg object to the body of the page
+            var svg = d3.select("#my_dataviz3").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+            // Wordcloud features that are different from one word to the other must be here
+
+            var multiSize = 0;
+
+            if ($(window).width() < 320) {
+                    multiSize = 0.3
+                }
+                else if ($(window).width() < 375) {
+                    multiSize = 0.4
+                }
+                else if ($(window).width() < 414) {
+                    multiSize = 0.5
+                }
+                else if ($(window).width() < 450) {
+                    multiSize = 0.6
+                }
+                else {
+                    multiSize = 1
+                }
+
+            var layout = d3.layout.cloud()
+            .size([width, height])
+            .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
+            .padding(1)        //space between words
+            .rotate(function() { return ~~(Math.random() * 2) * 90; })
+            .fontSize(function(d) { return d.size; })      // font size of words
+            .on("end", draw);
+            layout.start();
+
+            // This function takes the output of 'layout' above and draw the words
+            // Wordcloud features that are THE SAME from one word to the other can be here
+            function draw(words) {
+            svg
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                    .data(words)
+                .enter().append("text")
+                    .style("font-size", function(d) { return d.size; })
+                    .style("fill", "#69b3a2")
+                    .attr("text-anchor", "middle")
+                    .style("font-family", "Impact")
+                    .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .text(function(d) { return d.text; });
+            }  
+
+        </script>
+
+        <script>  
+            // List of words
+            // var myWords = [{word: "Running", size: "10"}, {word: "Surfing", size: "20"}, {word: "Climbing", size: "50"}, {word: "Kiting", size: "30"}, {word: "Sailing", size: "20"}, {word: "Snowboarding", size: "60"} ]
+            var myWords = [{{CodDict|safe}}]
+
+            // set the dimensions and margins of the graph
+            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+                // width = 450 - margin.left - margin.right,
+                // height = 450 - margin.top - margin.bottom;
+
+                // width = 450 - margin.left - margin.right,
+                // height = 450 - margin.top - margin.bottom;
+
+                screenWidth = 0;
+
+                if ($(window).width() < 320) {
+                    screenWidth = 260
+                }
+                else if ($(window).width() < 375) {
+                    screenWidth = 280
+                }
+                else if ($(window).width() < 414) {
+                    screenWidth = 310
+                }
+                else if ($(window).width() < 450) {
+                    screenWidth = 366
+                }
+                else {
+                    screenWidth = 450
+                }
+
+                // console.loq(screenWidth)
+
+                width = screenWidth - margin.left - margin.right,
+                height = screenWidth - margin.top - margin.bottom;
+
+
+            // append the svg object to the body of the page
+            var svg = d3.select("#my_dataviz4").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+            // Wordcloud features that are different from one word to the other must be here
+
+            var multiSize = 0;
+
+            if ($(window).width() < 320) {
+                    multiSize = 0.3
+                }
+                else if ($(window).width() < 375) {
+                    multiSize = 0.4
+                }
+                else if ($(window).width() < 414) {
+                    multiSize = 0.5
+                }
+                else if ($(window).width() < 450) {
+                    multiSize = 0.6
+                }
+                else {
+                    multiSize = 1
+                }
+
+            var layout = d3.layout.cloud()
+            .size([width, height])
+            .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
+            .padding(0)        //space between words
+            .rotate(function() { return ~~(Math.random() * 2) * 90; })
+            .fontSize(function(d) { return d.size; })      // font size of words
+            .on("end", draw);
+            layout.start();
+
+            // This function takes the output of 'layout' above and draw the words
+            // Wordcloud features that are THE SAME from one word to the other can be here
+            function draw(words) {
+            svg
+                .append("g")
+                .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                .selectAll("text")
+                    .data(words)
+                .enter().append("text")
+                    .style("font-size", function(d) { return d.size; })
+                    .style("fill", "#69b3a2")
+                    .attr("text-anchor", "middle")
+                    .style("font-family", "Impact")
+                    .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .text(function(d) { return d.text; });
+            }   
+
+        </script>
 
 
         {% endblock cuerpo %}
