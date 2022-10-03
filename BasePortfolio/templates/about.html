@@ -236,7 +236,7 @@
             var myWords = [{{DataDict|safe}}]
 
             // set the dimensions and margins of the graph
-            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+            var margin = {top: 10, right: 10, bottom: 10, left: 10}
                 // width = 450 - margin.left - margin.right,
                 // height = 450 - margin.top - margin.bottom;
 
@@ -296,7 +296,7 @@
             var layout = d3.layout.cloud()
             .size([width, height])
             .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
-            .padding(1)        //space between words
+            .padding(0)        //space between words
             .rotate(function() { return ~~(Math.random() * 2) * 90; })
             .fontSize(function(d) { return d.size; })      // font size of words
             .on("end", draw);
@@ -312,9 +312,9 @@
                     .data(words)
                 .enter().append("text")
                     .style("font-size", function(d) { return d.size; })
-                    .style("fill", "#69b3a2")
+                    .style("fill", "#0f4061")
                     .attr("text-anchor", "middle")
-                    .style("font-family", "Impact")
+                    .style("font-family", "Futura-bold-condensed")
                     .attr("transform", function(d) {
                     return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
                     })
@@ -328,7 +328,7 @@
             var myWords = [{{FullDict|safe}}]
 
             // set the dimensions and margins of the graph
-            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+            var margin = {top: 10, right: 10, bottom: 10, left: 10}
                 // width = 450 - margin.left - margin.right,
                 // height = 450 - margin.top - margin.bottom;
 
@@ -387,7 +387,7 @@
             var layout = d3.layout.cloud()
             .size([width, height])
             .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
-            .padding(1)        //space between words
+            .padding(0)        //space between words
             .rotate(function() { return ~~(Math.random() * 2) * 90; })
             .fontSize(function(d) { return d.size; })      // font size of words
             .on("end", draw);
@@ -403,9 +403,9 @@
                     .data(words)
                 .enter().append("text")
                     .style("font-size", function(d) { return d.size; })
-                    .style("fill", "#69b3a2")
+                    .style("fill", "#0f4061")
                     .attr("text-anchor", "middle")
-                    .style("font-family", "Impact")
+                    .style("font-family", "Futura-bold-condensed")
                     .attr("transform", function(d) {
                     return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
                     })
@@ -420,7 +420,7 @@
             var myWords = [{{OfficeDict|safe}}]
 
             // set the dimensions and margins of the graph
-            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+            var margin = {top: 10, right: 10, bottom: 10, left: 10}
                 // width = 450 - margin.left - margin.right,
                 // height = 450 - margin.top - margin.bottom;
 
@@ -479,7 +479,7 @@
             var layout = d3.layout.cloud()
             .size([width, height])
             .words(myWords.map(function(d) { return {text: d.word, size:d.size*multiSize}; }))
-            .padding(1)        //space between words
+            .padding(0)        //space between words
             .rotate(function() { return ~~(Math.random() * 2) * 90; })
             .fontSize(function(d) { return d.size; })      // font size of words
             .on("end", draw);
@@ -495,9 +495,9 @@
                     .data(words)
                 .enter().append("text")
                     .style("font-size", function(d) { return d.size; })
-                    .style("fill", "#69b3a2")
+                    .style("fill", "#0f4061")
                     .attr("text-anchor", "middle")
-                    .style("font-family", "Impact")
+                    .style("font-family", "Futura-bold-condensed")
                     .attr("transform", function(d) {
                     return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
                     })
@@ -512,7 +512,7 @@
             var myWords = [{{CodDict|safe}}]
 
             // set the dimensions and margins of the graph
-            var margin = {top: 1, right: 0, bottom: 1, left: 0},
+            var margin = {top: 10, right: 10, bottom: 10, left: 10}
                 // width = 450 - margin.left - margin.right,
                 // height = 450 - margin.top - margin.bottom;
 
@@ -591,9 +591,9 @@
                     .data(words)
                 .enter().append("text")
                     .style("font-size", function(d) { return d.size; })
-                    .style("fill", "#69b3a2")
+                    .style("fill", "#0f4061")
                     .attr("text-anchor", "middle")
-                    .style("font-family", "Impact")
+                    .style("font-family", "Futura-bold-condensed")
                     .attr("transform", function(d) {
                     return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
                     })
