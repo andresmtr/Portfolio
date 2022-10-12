@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-05 23:14-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: BasePortfolio/templates/about.html:4 BasePortfolio/templates/base.html:38
+#: BasePortfolio/templates/project.html:4
+#: BasePortfolio/templates/tutorial.html:4
+msgid "Andrés Triana - Portfolio"
+msgstr "Andrés Triana - Portfolio"
+
+#: BasePortfolio/templates/about.html:13
+msgid "Profile"
+msgstr "Perfil"
+
+#: BasePortfolio/templates/about.html:18 BasePortfolio/templates/base.html:188
+msgid ""
+"Systems engineer with extensive experience in positions such as database "
+"management, evaluation and monitoring, construction of management reports "
+"and progress indicators, using Python and Excel for extraction, debugging, "
+"analysis, visualization of data and information. Strengths in interpreting, "
+"analyzing and diagnosing process advances, good at designing and "
+"implementing operational plans oriented to timely decision-making."
+msgstr ""
+
+#: BasePortfolio/templates/about.html:20 BasePortfolio/templates/base.html:190
+msgid ""
+"Ingeniero de sistemas con amplia experiencia en cargos como evaluación y "
+"monitoreo, manejo de bases de datos, construcción de reportes gerenciales e "
+"indicadores de avance, usando Python y Excel para la extracción, depuración, "
+"análisis, visualización de datos e información. Fortalezas para interpretar, "
+"analizar y diagnosticar avances de procesos, así como para diseñar e "
+"implementar planes operativos orientados para la toma de decisiones "
+"oportunas."
+msgstr ""
+
+#: BasePortfolio/templates/about.html:34
+msgid "Experience"
+msgstr "Experiencia"
+
+#: BasePortfolio/templates/about.html:98
+msgid "Education"
+msgstr "Educación"
+
+#: BasePortfolio/templates/about.html:147
+msgid "Certifications"
+msgstr "Certificaciones"
+
+#: BasePortfolio/templates/about.html:173 BasePortfolio/templates/base.html:209
+msgid "Skills"
+msgstr "Habilidades"
+
+#: BasePortfolio/templates/about.html:181 BasePortfolio/templates/base.html:217
+msgid "Data analytics and visualization"
+msgstr "Análisis de datos y visualizaciones"
+
+#: BasePortfolio/templates/base.html:67
+msgid "Home"
+msgstr "Inicio"
+
+#: BasePortfolio/templates/base.html:70 BasePortfolio/templates/base.html:162
+msgid "About Me"
+msgstr "Acerca de mi"
+
+#: BasePortfolio/templates/base.html:73 BasePortfolio/templates/base.html:423
+#: BasePortfolio/templates/project.html:12
+msgid "Projects"
+msgstr "Proyectos"
+
+#: BasePortfolio/templates/base.html:76 BasePortfolio/templates/base.html:497
+#: BasePortfolio/templates/tutorial.html:12
+msgid "Tutorials"
+msgstr "Tutoriales"
+
+#: BasePortfolio/templates/base.html:79 BasePortfolio/templates/base.html:570
+msgid "Contact"
+msgstr "Contacto"
+
+#: BasePortfolio/templates/base.html:114
+msgid "Hello, I'm "
+msgstr "Hola, soy "
+
+#: BasePortfolio/templates/base.html:169
+msgid "Love data"
+msgstr "Amor por los datos"
+
+#: BasePortfolio/templates/base.html:170
+#, fuzzy
+#| msgid ""
+#| "With the data can identify differents problems, analysts and transform. "
+#| "For this reason, I love the data and solve problems."
+msgid ""
+"With data, I can identify different problems, analyze and transform. For "
+"this reason, I love data and solving problems."
+msgstr ""
+"Con los datos puedo identificar diferentes problemas, analizarlos y "
+"transformarlos. Por esta razón, me encantan los datos y resolver problemas"
+
+#: BasePortfolio/templates/base.html:174
+msgid "Enjoy programming"
+msgstr "Disfrutar programando"
+
+#: BasePortfolio/templates/base.html:175
+#, fuzzy
+#| msgid ""
+#| "Programming isn't a skill that everyone has and enjoy. For love coding, "
+#| "need creativity, knowledge and practice."
+msgid ""
+"Programming isn't a skill that everyone has and enjoys. To love coding, you "
+"need creativity, knowledge and practice."
+msgstr ""
+"Programar no es una habilidad que todo mundo tenga, y disfrute. Para amar la "
+"codificación, necesitas creatividad, conocimiento y practica."
+
+#: BasePortfolio/templates/base.html:179
+msgid "Learning all the time"
+msgstr "Aprendiendo todo el tiempo"
+
+#: BasePortfolio/templates/base.html:180
+#, fuzzy
+#| msgid ""
+#| "The knowledge is the best tool to transform any life and create the "
+#| "better path. Learning changes everything."
+msgid ""
+"Knowledge is the best tool to transform any life and create a better path. "
+"Learning changes everything."
+msgstr "El conocimiento es la mejor herramienta para transformar cualquier vida y crear un mejor camino. Aprender lo cambia todo."
+"El conocimiento es la mejor herramienta para transformar cualquier vida y "
+"crear un mejor camino. Aprender lo cambia todo."
+
+#: BasePortfolio/templates/base.html:186
+msgid "My profile"
+msgstr "Mi perfil"
+
+#: BasePortfolio/templates/base.html:371
+msgid "More about me"
+msgstr "Más acerca de mi"
+
+#: BasePortfolio/templates/base.html:386
+msgid "Would you like to know more about my professional career?"
+msgstr "¿Quiere conocer más acerca de mi vida profesional?"
+
+#: BasePortfolio/templates/base.html:394 BasePortfolio/templates/base.html:404
+msgid "Download CV"
+msgstr "Descargar hoja de vida"
+
+#: portfolio/settings.py:133
+msgid "English"
+msgstr "Inglés"
+
+#: portfolio/settings.py:134
+msgid "Spanish"
+msgstr "Español"
+
+#~ msgid "Passions"
+#~ msgstr "Pasiones"
+
+#~ msgid "I'm Here, base.html"
+#~ msgstr "Estoy Aca en base.html"
+
+#~ msgid "I'm here, in view"
+#~ msgstr "Estoy aca en view"
+
+#~ msgid "French"
+#~ msgstr "Frances"
