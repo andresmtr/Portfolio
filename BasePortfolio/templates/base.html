@@ -87,10 +87,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-black" href="{% url 'BasePortfolio:tutorial' %}">{% trans "Tutorials" %}</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-black" href="#">{% trans "Contact" %}</a>
-                    </li> -->
-
                     <ul class="nav navbar-nav navbar-right language menu">
                         <form action="{% url 'set_language' %}" method="post">
                             {% csrf_token %}
@@ -139,21 +135,21 @@
                                 <span
                                     class="txt-rotate"
                                     data-period="2000"
-                                    data-rotate='[ "Data Science.", "Data analytics.", "Systems Engineer.", "Data visualizations.","Full stack developer - Django.","Monitoring and evaluation."]'>
+                                    data-rotate='[ "Data analytics.", "Systems Engineer.", "Data visualizations.","Full stack developer - Django.","Monitoring and evaluation."]'>
                                 </span>
                             {% elif request.LANGUAGE_CODE == 'es' %}
                                 <span class="typedEs"></span>  
                                 <span
                                     class="txt-rotate"
                                     data-period="2000"
-                                    data-rotate='[ "Data Science.", "Análisis de datos.", "Ingeniero de sistemas.", "Visualización de datos","Full stack developer - Django.","Monitoreo y evaluación."]'>
+                                    data-rotate='[ "Análisis de datos.", "Ingeniero de sistemas.", "Visualización de datos","Full stack developer - Django.","Monitoreo y evaluación."]'>
                                 </span>
                             {% elif request.LANGUAGE_CODE == 'fr' %}
                                 <span class="typedFr"></span>  
                                 <span
                                     class="txt-rotate"
                                     data-period="2000"
-                                    data-rotate='[ "Ingeniero de sistemas.", "Analisis y visualizacion de datos.", "Monitoreo y evaluación."]'>
+                                    data-rotate='[ "Analisis y visualizacion de datos.", "Monitoreo y evaluación."]'>
                                 </span>
                             {% endif %}
                             
@@ -210,9 +206,9 @@
                     <div class="col-12 col-sm-12 col-md-12">
                         <h2 class="subtitleAbout">{% trans "My profile" %}</h2>
                         {% if request.LANGUAGE_CODE == 'en-us' %}
-                        <p class="ParaAbout">{% trans "Data Analytics and Systems engineers with extensive experience in positions such as database management, data analytics, evaluation and monitoring, construction of management reports and progress indicators, using Python and differents tools for extraction, debugging, analysis, visualization of data and information. Strengths in interpreting, analyzing and diagnosing process advances, good at designing and implementing operational plans oriented to timely decision-making" %}</p>    
+                        <p class="ParaAbout">{% trans "Extensive experience in positions such as database management, data analytics, evaluation and monitoring, construction of management reports and progress indicators, using Python and different tools for extraction, debugging, analysis, visualization of data and information. Strengths in interpreting, analyzing and diagnosing process advances, good at designing and implementing operational plans oriented to timely decision-making." %}</p>    
                         {% elif request.LANGUAGE_CODE == 'es' %}
-                        <p class="ParaAbout">{% trans "Ingeniero de sistemas con amplia experiencia en cargos como evaluación y monitoreo, manejo de bases de datos, construcción de reportes gerenciales e indicadores de avance, usando Python y Excel para la extracción, depuración, análisis, visualización de datos e información. Fortalezas para interpretar, analizar y diagnosticar avances de procesos, así como para diseñar e implementar planes operativos orientados para la toma de decisiones oportunas." %}</p>    
+                        <p class="ParaAbout">{% trans "Amplia experiencia en posiciones como gestión de bases de datos, análisis de datos, evaluación y seguimiento, construcción de informes de gestión e indicadores de progreso, utilizando Python y diferentes herramientas para la extracción, depuración, análisis y visualización de datos e información. Fortalezas en la interpretación, análisis y diagnóstico de avances del proceso, habilidad en el diseño e implementación de planes operativos orientados a la toma de decisiones oportuna." %}</p>    
                         {% elif request.LANGUAGE_CODE == 'fr' %}
                         {% endif %}
                     </div>
@@ -240,59 +236,11 @@
                 <div class="col-md-6 col-xs-6 DataScience">
                     <div id="spin">
                         {% if request.LANGUAGE_CODE == 'en-us' %}
-                            <h3>{% trans "Data science, analytics and visualization" %}</h3>
+                            <h3>{% trans "Data analytics and visualization" %}</h3>
                         {% elif request.LANGUAGE_CODE == 'es' %}
-                            <h3>Data science, analytics y visualization</h3>
+                            <h3>Data analytics y visualization</h3>
                         {% endif %}
                     </div>
-                    <!-- <div>
-                        <div class="gridData1">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Python.svg" %}" width="50" height="50"></p>
-                                <p>Python</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Matplotlib.svg" %}" width="50" height="50"></p>
-                                <p>Matplotlib</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/numpy.svg" %}" width="80" height="45"></p>
-                                <p>Numpy</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Seaborn.svg" %}" width="80" height="45"></p>
-                                <p>Seaborn</p>
-                            </div>
-                        </div>
-                        <div class="gridData2">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Pandas.svg" %}" width="60" height="50"></p>
-                                <p>Pandas</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/plotly.svg" %}" width="60" height="50"></p>
-                                <p>Dash-Plotly</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/chartjs.svg" %}" width="60" height="50"></p>
-                                <p>Chart.js</p>
-                            </div>
-                        </div>
-                        <div class="gridData2">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/google-data-studio.svg" %}" width="60" height="50"></p>
-                                <p>Google Data Studio</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/PowerBi.svg" %}" width="60" height="50"></p>
-                                <p>Power Bi</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/PowerBi.svg" %}" width="60" height="50"></p>
-                                <p>Web Scraping - Beautiful Soup</p>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="cloudWords">
                         <div id="my_dataviz"></div>
                         <!-- <p>{{DataDict}}</p> -->
@@ -304,42 +252,6 @@
                     <div id="spin">
                         <h3>Full stack developer</h3>
                     </div>
-                    <!-- <div>
-                        <div class="gridWeb">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/html-5.svg" %}" width="50" height="50"></p>
-                                <p>HTML</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/css-3.svg" %}" width="50" height="50"></p>
-                                <p>CSS</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Bootstrap_logo.svg" %}" width="50" height="50"></p>
-                                <p>Bootstrap</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/javascript.svg" %}" width="50" height="50"></p>
-                                <p>JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="gridback">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/Python.svg" %}" width="50" height="50"></p>
-                                <p>Python</p>
-                            </div>
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/django.svg" %}" width="50" height="50"></p>
-                                <p>Django</p>
-                            </div>
-                        </div>
-                        <div class="gridSQL">
-                            <div id="spin">
-                                <p class=""><img src="{% static "base/icon/database.svg" %}" width="70" height="45"></p>
-                                <p>SQL</p>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="cloudWords">
                         <div id="my_dataviz2"></div>
                         <!-- <p>{{DataDict}}</p> -->
@@ -355,34 +267,6 @@
                         <h3>Office y Project Managment</h3>
                     {% endif %}
                     </div>
-                    <!-- <div class="gridOfimatica">
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/excel.svg" %}" width="50" height="50"></p>
-                            <p>Excel</p>
-                        </div>
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/word.svg" %}" width="50" height="50"></p>
-                            <p>Word</p>
-                        </div>
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/powerpoint.svg" %}" width="50" height="50"></p>
-                            <p>Power Point</p>
-                        </div>
-                    </div>
-                    <div class="gridOfimatica">
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/Slack.svg" %}" width="50" height="50"></p>
-                            <p>Slack</p>
-                        </div>
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/Trello.svg" %}" width="50" height="50"></p>
-                            <p>Trello</p>
-                        </div>
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/Teams.svg" %}" width="50" height="50"></p>
-                            <p>Microsoft Teams</p>
-                        </div>
-                    </div> -->
                     <div class="cloudWords">
                         <div id="my_dataviz3"></div>
                         <!-- <p>{{DataDict}}</p> -->
@@ -394,20 +278,6 @@
                     <div id="spin">
                         <h3>Coding</h3>
                     </div>
-                    <!-- <div class="gridOfimatica">
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/visual-studio-code.svg" %}" width="50" height="50"></p>
-                            <p>Visual studio Code</p>
-                        </div>
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/jupyter.svg" %}" width="50" height="50"></p>
-                            <p>Jupyter Notebook</p>
-                        </div>
-                        <div id="spin">
-                            <p class=""><img src="{% static "base/icon/Google_Colaboratory.png" %}" width="70" height="50"></p>
-                            <p>Google Colaboratory</p>
-                        </div>
-                    </div> -->
                     <div class="cloudWords">
                         <div id="my_dataviz4"></div>
                         <!-- <p>{{DataDict}}</p> -->
@@ -444,7 +314,7 @@
                             <div>
                                 <div class="container">
                                     <div class="btMoreAboutMe">
-                                        <a class="button button1" href="{{ en.namePdf.url }}" download="Andres_Triana_cv.pdf" role="button">{% trans "Download CV" %}</a>
+                                        <a class="button button1" href="{{ en.namePdf.url }}" download="Andres_Triana_cv.docx" role="button">{% trans "Download CV" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -454,7 +324,7 @@
                             <div>
                                 <div class="container">
                                     <div class="btMoreAboutMe">
-                                        <a class="button button1" href="{{ en.namePdf.url }}" download="Andres_Triana_HV.pdf" role="button">{% trans "Download CV" %}</a>
+                                        <a class="button button1" href="{{ en.namePdf.url }}" download="Andres_Triana_cv.docx" role="button">{% trans "Download CV" %}</a>
                                     </div>
                                 </div>
                             </div>
@@ -489,8 +359,20 @@
                                 </div>
                             </div>
                             <div class="text-container">
-                              <h3>{{ en.title }}</h3>
+                              <h3 class="text-tittle-base">{{ en.title }}</h3>
                               <br>
+                                <div>
+                                    <div>
+                                        <div class="btMoreAboutMe">
+                                            <a class="button button1" href="{{ en.GitLink }}" role="button" target="_blank">GitHub</a>
+                                            {% if en.LinkWeb != Null %}
+                                                <a class="button button1" href="{{ en.LinkWeb }}" role="button" target="_blank">Web</a>
+                                            {% else %}
+                                                &nbsp;
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         {% endfor %}    
@@ -516,8 +398,21 @@
                                 </div>
                             </div>
                             <div class="text-container">
-                            <h3>{{ en.title }}</h3>
-                            <br>
+                                <h3 class="text-tittle-base">{{ en.title }}</h3>
+                                <br>
+                                <div>
+                                    <div>
+                                        <div class="btMoreAboutMe">
+                                            <a class="button button1" href="{{ en.GitLink }}" role="button" target="_blank">GitHub</a>
+                                            {% if en.LinkWeb != Null %}
+                                                <a class="button button1" href="{{ en.LinkWeb }}" role="button" target="_blank">Web</a>
+                                            {% else %}
+                                                &nbsp;
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            
                             </div>
                         </div>
                     {% endfor %}  
@@ -532,8 +427,7 @@
                     </div>
                 {% elif request.LANGUAGE_CODE == 'fr' %}
                     
-                {% endif %}
-                
+                {% endif %}         
             </div>
         </div>
     </section>
@@ -563,7 +457,24 @@
                                 </div>
                             </div>
                             <div class="text-container">
-                              <h3>{{ en.title }}</h3>   
+                              <h3 class="text-tittle-base">{{ en.title }}</h3>   
+                              <br>
+                              <div>
+                                <div>
+                                    <div class="btMoreAboutMe">
+                                        {% if en.GitLink != Null %}
+                                            <a class="button button1" href="{{ en.GitLink }}" role="button" target="_blank">GitHub</a>
+                                        {% else %}
+                                            &nbsp;
+                                        {% endif %}
+                                        {% if en.YoutubeLink != Null %}
+                                            <a class="button button1" href="{{ en.YoutubeLink }}" role="button" target="_blank">Youtube</a>
+                                        {% else %}
+                                            &nbsp;
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         {% endfor %}    
@@ -589,7 +500,24 @@
                                 </div>
                             </div>
                             <div class="text-container">
-                            <h3>{{ en.title }}</h3>
+                                <h3 class="text-tittle-base">{{ en.title }}</h3>
+                                <br>
+                                <div>
+                                    <div>
+                                        <div class="btMoreAboutMe">
+                                            {% if en.GitLink != Null %}
+                                                <a class="button button1" href="{{ en.GitLink }}" role="button" target="_blank">GitHub</a>
+                                            {% else %}
+                                                &nbsp;
+                                            {% endif %}
+                                            {% if en.YoutubeLink != Null %}
+                                                <a class="button button1" href="{{ en.YoutubeLink }}" role="button" target="_blank">Youtube</a>
+                                            {% else %}
+                                                &nbsp;
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     {% endfor %}  
